@@ -1,0 +1,85 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* Estilo para el aside */
+aside {
+    background-color: #f0f0f0;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    width: 220px;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Estilo para el contenido principal */
+main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* Estilo para las imágenes */
+img {
+    max-width: 100%;  /* Asegura que la imagen no sobrepase el contenedor */
+    height: auto;     /* Mantiene las proporciones originales */
+    display: block;   /* Evita que la imagen tenga espacio adicional */
+    margin: 10px auto; /* Centra la imagen horizontalmente */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Tamaño específico para imágenes pequeñas */
+.img-1, .img-2, .img-3, .img-4, .img-5 {
+    width: 300px;  /* Ajusta el tamaño de las imágenes a 300px de ancho */
+    height: auto;  /* Mantiene las proporciones de altura */
+}
+
+/* Alineación de las imágenes con el texto */
+section img {
+    float: left;  /* Hace que la imagen flote a la izquierda del texto */
+    margin-right: 20px;  /* Añade espacio entre la imagen y el texto */
+    margin-bottom: 10px; /* Añade espacio debajo de la imagen */
+}
+
+/* Limpieza del flotado para que no afecte a secciones posteriores */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
